@@ -17,5 +17,6 @@ namespace WebAPIAutores
         // Indicamos la creacion de una Tabla apartir del esquema de la clase Autor y la tabla tendra el nombre 
         // de Autores.
         public DbSet<Autor> Autores { get; set; }
+        public DbSet<Libro> Libros { get; set; }
     }
 }
