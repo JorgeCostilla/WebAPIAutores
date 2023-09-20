@@ -22,10 +22,14 @@ namespace WebAPIAutores.Controllers
         [HttpGet]
         [HttpGet("listado")] // api/autores/listado
         [HttpGet("/listado")] // listado
-        public async Task<ActionResult<List<Autor>>> Get()
+        public List<Autor> Get()
         {
-            return await context.Autores.Include(x => x.Libros).ToListAsync();
+            return context.Autores.Include(x => x.Libros).ToList();
         }
+        // public async Task<ActionResult<List<Autor>>> Get()
+        // {
+        //     return await context.Autores.Include(x => x.Libros).ToListAsync();
+        // }
 
         [HttpGet("primero")] // api/autores/primero
         public async Task<ActionResult<Autor>> PrimerAutor()
