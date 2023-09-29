@@ -210,7 +210,7 @@ Para obtener un 200 necesitamos pues correguir todos los errores
 
 ## Si quiero validar que mi nombre inicie con mayusculas ¿estas validaciones sirven? 
 
-La respuesta corta es no aquí si poner Pepe o pepe son aceptados porque cumple con el largo del string pero pepe no deberia de ser correcto porque es un nombre los nombres inician con mayusculas.
+La respuesta corta es no aquí si pones Pepe o pepe son aceptados porque cumple con el largo del string pero pepe no deberia de ser correcto porque es un nombre los nombres inician con mayusculas.
 
 Por el momento hemos utilizado validaciones predefinidas como si es requerido el rango stringlength etc.
 
