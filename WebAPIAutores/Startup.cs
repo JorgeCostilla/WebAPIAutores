@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
+using WebAPIAutores.Servicios;
 // using System.Text.Json.Serialization;
 
 namespace WebAPIAutores
@@ -21,6 +22,9 @@ namespace WebAPIAutores
             services.AddDbContext<ApplicationDbContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
 
+            services.AddTransient<IServicio, ServicioA>();
+            // services.AddTransient<ServicioA>();
+            
             services.AddEndpointsApiExplorer();
 
             services.AddSwaggerGen();
