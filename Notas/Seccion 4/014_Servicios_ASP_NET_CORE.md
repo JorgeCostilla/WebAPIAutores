@@ -57,6 +57,6 @@ public void ConfigureServices(IServiceCollection services)
 
 - AddTransient -> Agregar un transitorio (Cuando se nos solicite resolver se nos dara una instancia de servicio A) Es bueno para simples funciones sin tener que mantener data. Ejemplo la validacion de la PrimeraLetraMayuscula.  No utiliza estado
 
-- AddSingleton -> Siempre sera la misma instancia para distintos usuarios. Nos sirve con cache con data en memoria y debe de ser uniforme asi todos los usuarios tendran la misma data compartida entre todos.
+- AddSingleton -> Siempre sera la misma instancia para distintos usuarios. Ejemplo: nos sirve con cache con data en memoria y debe de ser uniforme asi todos los usuarios tendran la misma data compartida entre todos.
 
-- AddScoped -> El tiempo de vida de la instancia de servicio A aumenta (Es una diferente para cada usuario). Es el alication dbContext configura el servicio como scoped la misma peticion tendra la misma instancia, para trabajar siempre con los mismo datos
+- AddScoped -> El tiempo de vida de la instancia de servicio A aumenta (Es una diferente para cada usuario). Es el alication dbContext configura el servicio como scoped la misma peticion tendra la misma instancia, para trabajar siempre con los mismo datos. Ejemplo es application dbContext

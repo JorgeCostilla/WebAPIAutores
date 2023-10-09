@@ -25,6 +25,11 @@ namespace WebAPIAutores
             services.AddTransient<IServicio, ServicioA>();
             // services.AddTransient<ServicioA>();
             
+            // Configuramos las clases de ejemplo como servicios
+            services.AddTransient<ServicioTrasient>();
+            services.AddScoped<ServicioScoped>();
+            services.AddSingleton<ServicioSingleton>();
+
             services.AddEndpointsApiExplorer();
 
             services.AddSwaggerGen();
