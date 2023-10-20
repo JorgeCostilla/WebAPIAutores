@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPIAutores.Entidades;
@@ -32,7 +33,8 @@ namespace WebAPIAutores.Controllers
             this.logger = logger;
         }
 
-        [HttpGet("GUI")]
+        [HttpGet("GUID")]
+        [ResponseCache(Duration = 10)]
         public ActionResult ObtenerGuids()
         {
             return Ok(new {

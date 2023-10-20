@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using WebAPIAutores.Middlewares;
 using WebAPIAutores.Servicios;
@@ -31,6 +32,11 @@ namespace WebAPIAutores
             services.AddScoped<ServicioScoped>();
             services.AddSingleton<ServicioSingleton>();
 
+            services.AddResponseCaching(); // Se agrego para utilizar los servicios de la cache
+
+            // Esto se configurara completo mas adelante por ahora con eso ya podemos indicar Authenticacion
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(); 
+
             services.AddEndpointsApiExplorer();
 
             services.AddSwaggerGen();
@@ -58,7 +64,9 @@ namespace WebAPIAutores
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseResponseCaching(); // Se agrego la tuberia de cache
+
+            app.UseAuthorization(); // Nos aseguramos tener esto antes de UseEndpoint
 
             app.UseEndpoints(endpoints =>
             {
