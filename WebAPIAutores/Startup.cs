@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using WebAPIAutores.Filtros;
 using WebAPIAutores.Middlewares;
 using WebAPIAutores.Servicios;
 // using System.Text.Json.Serialization;
@@ -18,7 +19,9 @@ namespace WebAPIAutores
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddJsonOptions(x =>
+            services.AddControllers(opciones =>{
+                opciones.Filters.Add(typeof(FiltroDeExcepcion));
+            }).AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -32,6 +35,9 @@ namespace WebAPIAutores
             services.AddScoped<ServicioScoped>();
             services.AddSingleton<ServicioSingleton>();
 
+            // Aqui se agrego el filtro personalizado
+            services.AddTransient<MiFiltroDeAccion>();
+            
             services.AddResponseCaching(); // Se agrego para utilizar los servicios de la cache
 
             // Esto se configurara completo mas adelante por ahora con eso ya podemos indicar Authenticacion
