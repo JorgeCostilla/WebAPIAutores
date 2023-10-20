@@ -37,6 +37,9 @@ namespace WebAPIAutores
 
             // Aqui se agrego el filtro personalizado
             services.AddTransient<MiFiltroDeAccion>();
+
+            // Aqui agregamos el servicio de Escribir en un archivo
+            services.AddHostedService<EscribirEnArchivo>();
             
             services.AddResponseCaching(); // Se agrego para utilizar los servicios de la cache
 

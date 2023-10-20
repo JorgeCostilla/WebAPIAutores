@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "X1gI8MujnmeYWBzaY59hUDcFjFfL1z7zb0R8vYSDM6w=",
+  "Hash": "+YAGRn+S4RMWSaIGyppVVTmU7MgbNAgzJHkNS4FgLx8=",
   "Source": "WebAPIAutores",
   "BasePath": "_content/WebAPIAutores",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAPIAutores\\wwwroot",
+      "Source": "WebAPIAutores",
+      "ContentRoot": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\wwwroot\\",
+      "BasePath": "_content/WebAPIAutores",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\wwwroot\\Archivo 1.txt",
+      "SourceId": "WebAPIAutores",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\wwwroot\\",
+      "BasePath": "_content/WebAPIAutores",
+      "RelativePath": "Archivo 1.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Archivo 1.txt"
+    }
+  ]
 }

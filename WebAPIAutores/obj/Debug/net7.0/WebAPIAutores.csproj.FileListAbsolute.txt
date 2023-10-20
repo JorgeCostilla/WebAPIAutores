@@ -75,3 +75,4 @@ C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIA
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\obj\Debug\net7.0\WebAPIAutores.genruntimeconfig.cache
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\obj\Debug\net7.0\ref\WebAPIAutores.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.staticwebassets.runtime.json
