@@ -115,3 +115,80 @@ dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
 ```
 
 Una vez instalado lo necesitamos configurarlo en la clase Startup
+
+
+Se debe de configurar en nuestro Startup.cs
+```c#
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers(opciones =>{
+        opciones.Filters.Add(typeof(FiltroDeExcepcion));
+    }).AddJsonOptions(x =>
+        x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+                
+        // Esto se configurara completo mas adelante por ahora con eso ya podemos indicar Authenticacion
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(); 
+
+            services.AddEndpointsApiExplorer();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiAutores", Version = "v1" });
+            });
+    
+    // Esta es la linea para configurar el automapper
+    services.AddAutoMapper(typeof(Startup));
+}
+```
+
+
+Despues se crea una carpeta de Utilidades y creamos una clase que se llama AutoMapperProfiles que debe de heredar de Profile
+```c#
+using AutoMapper;
+using WebAPIAutores.DTOs;
+using WebAPIAutores.Entidades;
+
+namespace WebAPIAutores.Utilidades
+{
+    public class AutoMapperProfiles: Profile
+    {
+        public AutoMapperProfiles()
+        {
+            CreateMap<AutorCreacionDTO, Autor>();
+        }
+    }
+}
+```
+
+Ahora mandamos llamar el servicio en el controlador de Autor
+```c#
+public AutoresController(ApplicationDbContext context, IMapper mapper)
+        {
+            this.context = context;
+            this.mapper = mapper;
+        }
+```
+
+Y el Endpoint queda de la siguiente manera
+```c#
+[HttpPost]
+        public async Task<ActionResult> Post([FromBody] AutorCreacionDTO autorCreacionDTO)
+        {
+            
+            var existeAutorConElMismoNombre = await context.Autores.AnyAsync(x => x.Nombre == autorCreacionDTO.Nombre);
+
+            if (existeAutorConElMismoNombre)
+            {
+                return BadRequest($"Ya existe un autor con el nombre {autorCreacionDTO.Nombre}");
+            }
+
+            var autor = mapper.Map<Autor>(autorCreacionDTO);
+
+            context.Add(autor);
+            await context.SaveChangesAsync();
+            return Ok();
+        }
+```

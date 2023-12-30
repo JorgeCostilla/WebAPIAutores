@@ -1,13 +1,17 @@
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\appsettings.json
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.staticwebassets.runtime.json
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.exe
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.deps.json
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.runtimeconfig.json
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.pdb
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Humanizer.dll
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -74,5 +78,3 @@ C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIA
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\obj\Debug\net7.0\WebAPIAutores.pdb
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\obj\Debug\net7.0\WebAPIAutores.genruntimeconfig.cache
 C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\obj\Debug\net7.0\ref\WebAPIAutores.dll
-C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\WebAPIAutores.staticwebassets.runtime.json
