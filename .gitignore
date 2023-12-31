@@ -399,6 +399,12 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# Excluir archivos con extensiones específicas (Jorge Costilla)
+*.cache
+*.dll
+*.pdb
+
+
 ### DotnetCore ###
 # .NET Core build folders
 bin/
