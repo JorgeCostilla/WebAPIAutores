@@ -4007,19 +4007,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\costi\\.nuget\\packages\\": {}
+    "C:\\Users\\Jcostillal\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\WebAPIAutores.csproj",
+      "projectUniqueName": "C:\\Users\\Jcostillal\\Documents\\001_Udemy\\002_WebApiDotNet\\WebAPIAutores\\WebAPIAutores\\WebAPIAutores.csproj",
       "projectName": "WebAPIAutores",
-      "projectPath": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\WebAPIAutores.csproj",
-      "packagesPath": "C:\\Users\\costi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\obj\\",
+      "projectPath": "C:\\Users\\Jcostillal\\Documents\\001_Udemy\\002_WebApiDotNet\\WebAPIAutores\\WebAPIAutores\\WebAPIAutores.csproj",
+      "packagesPath": "C:\\Users\\Jcostillal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jcostillal\\Documents\\001_Udemy\\002_WebApiDotNet\\WebAPIAutores\\WebAPIAutores\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\costi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jcostillal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4101,7 +4106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
