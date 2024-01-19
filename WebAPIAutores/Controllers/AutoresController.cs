@@ -73,8 +73,10 @@ namespace WebAPIAutores.Controllers
 
             context.Add(autor);
             await context.SaveChangesAsync();
-            return Ok();
-            //return CreatedAtRoute("obtenerAutor", new { id = autor.Id}, );
+
+            var autorDTO = mapper.Map<AutorDTO>(autor);
+
+            return CreatedAtRoute("obtenerAutor", new { id = autor.Id }, autorDTO);
         }
 
         [HttpPut("{id:int}")]
