@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+YAGRn+S4RMWSaIGyppVVTmU7MgbNAgzJHkNS4FgLx8=",
+  "Hash": "nW8C1Z7YVlm7jAiqTE4QUxMLz2bm3T2CnS281ydLklE=",
   "Source": "WebAPIAutores",
   "BasePath": "_content/WebAPIAutores",
   "Mode": "Default",
@@ -10,22 +10,24 @@
     {
       "Name": "WebAPIAutores\\wwwroot",
       "Source": "WebAPIAutores",
-      "ContentRoot": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Jcostillal\\Documents\\001_Udemy\\002_WebApiDotNet\\WebAPIAutores\\WebAPIAutores\\wwwroot\\",
       "BasePath": "_content/WebAPIAutores",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\wwwroot\\Archivo 1.txt",
+      "Identity": "C:\\Users\\Jcostillal\\Documents\\001_Udemy\\002_WebApiDotNet\\WebAPIAutores\\WebAPIAutores\\wwwroot\\Archivo 1.txt",
       "SourceId": "WebAPIAutores",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\costi\\Documents\\004_Cursos_Udemy\\001_Curso_API_NetCore6\\Web API\\WebAPIAutores\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Jcostillal\\Documents\\001_Udemy\\002_WebApiDotNet\\WebAPIAutores\\WebAPIAutores\\wwwroot\\",
       "BasePath": "_content/WebAPIAutores",
       "RelativePath": "Archivo 1.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
