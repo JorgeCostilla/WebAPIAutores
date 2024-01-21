@@ -159,3 +159,7 @@ C:\Users\Jcostillal\Documents\001_Udemy\002_WebApiDotNet\WebAPIAutores\WebAPIAut
 C:\Users\Jcostillal\Documents\001_Udemy\002_WebApiDotNet\WebAPIAutores\WebAPIAutores\obj\Debug\net7.0\WebAPIAutores.pdb
 C:\Users\Jcostillal\Documents\001_Udemy\002_WebApiDotNet\WebAPIAutores\WebAPIAutores\obj\Debug\net7.0\WebAPIAutores.genruntimeconfig.cache
 C:\Users\Jcostillal\Documents\001_Udemy\002_WebApiDotNet\WebAPIAutores\WebAPIAutores\obj\Debug\net7.0\ref\WebAPIAutores.dll
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\costi\Documents\004_Cursos_Udemy\001_Curso_API_NetCore6\Web API\WebAPIAutores\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
